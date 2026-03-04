@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import {Space_Grotesk, Inter} from 'next/font/google';
 import './globals.css'; // Global styles
+import { LanguageProvider } from '@/context/LanguageContext';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -23,7 +24,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body className="bg-black text-white antialiased font-sans selection:bg-cyan-500/30 selection:text-cyan-200" suppressHydrationWarning>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

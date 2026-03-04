@@ -3,38 +3,41 @@
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-
-const apps = [
-  {
-    id: 1,
-    name: 'Vá Comprar!',
-    tag: 'Featured Project',
-    description: 'A clean and intuitive grocery list app designed to simplify everyday shopping.',
-    image: '/projects/va-comprar-mockup.png',
-    buttonText: 'View Project',
-    link: '#',
-  },
-  {
-    id: 2,
-    name: 'NutriKiko',
-    tag: 'Private Client Platform',
-    description: 'A structured meal planning system built to help nutrition professionals deliver customized diet plans.',
-    image: '/projects/nutrikiko-mockup.png',
-    buttonText: 'View Platform',
-    link: '#',
-  },
-  {
-    id: 3,
-    name: 'Custom Service Apps',
-    tag: 'Tailor-Made Solutions',
-    description: 'Custom mobile apps designed for service professionals to manage bookings, clients and operations.',
-    image: '/projects/custom-service-apps-mockup.png',
-    buttonText: 'Explore Solutions',
-    link: '#',
-  },
-];
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function FeaturedApps() {
+  const { t } = useLanguage();
+
+  const apps = [
+    {
+      id: 1,
+      name: 'Vá Comprar!',
+      tag: t('apps.va_comprar.tag'),
+      description: t('apps.va_comprar.description'),
+      image: '/projects/va-comprar-mockup.png',
+      buttonText: t('apps.va_comprar.button'),
+      link: '#',
+    },
+    {
+      id: 2,
+      name: 'NutriKiko',
+      tag: t('apps.nutrikiko.tag'),
+      description: t('apps.nutrikiko.description'),
+      image: '/projects/nutrikiko-mockup.png',
+      buttonText: t('apps.nutrikiko.button'),
+      link: '#',
+    },
+    {
+      id: 3,
+      name: t('apps.custom.name'),
+      tag: t('apps.custom.tag'),
+      description: t('apps.custom.description'),
+      image: '/projects/custom-service-apps-mockup.png',
+      buttonText: t('apps.custom.button'),
+      link: '#',
+    },
+  ];
+
   return (
     <section className="py-32 px-6 md:px-12 lg:px-24 bg-black">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
