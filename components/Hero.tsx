@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import { Mail, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
@@ -76,10 +76,17 @@ export default function Hero() {
           >
             <a 
               href="mailto:studiomak26@gmail.com" 
-              className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase text-white/70 hover:text-cyan-400 transition-colors"
+              className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase transition-colors"
             >
-              <Mail className="w-4 h-4" />
-              <span>{t('hero.email')}</span>
+              <div className="relative w-5 h-5 drop-shadow-[0_0_6px_rgba(74,222,128,0.5)]">
+                <Image 
+                  src="/hero/iconemail.png" 
+                  alt="Email" 
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-green-400 drop-shadow-[0_0_5px_rgba(74,222,128,0.4)] font-semibold">EMAIL</span>
             </a>
 
             {INSTAGRAM_ENABLED && (
