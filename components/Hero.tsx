@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="font-display font-bold leading-[0.9] tracking-tight text-white mb-12 flex flex-col items-start"
+            className="font-display font-bold leading-[0.9] tracking-tight text-white mb-8 flex flex-col items-start"
           >
             <div className="flex flex-col w-full">
               <span className="text-4xl md:text-6xl lg:text-7xl leading-[0.9]">{t('hero.title.start')}</span>
@@ -72,13 +72,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex gap-6"
+            className="flex flex-col md:flex-row gap-4 md:items-center"
           >
             <a 
               href="mailto:studiomak26@gmail.com" 
-              className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase transition-colors"
+              className="group flex items-center gap-3 text-base md:text-lg font-medium tracking-wide uppercase transition-colors"
             >
-              <div className="relative w-5 h-5 drop-shadow-[0_0_6px_rgba(74,222,128,0.5)]">
+              <div className="relative w-6 h-6 md:w-8 md:h-8 drop-shadow-[0_0_8px_rgba(74,222,128,0.6)]">
                 <Image 
                   src="/hero/iconemail.png" 
                   alt="Email" 
@@ -86,8 +86,14 @@ export default function Hero() {
                   className="object-contain"
                 />
               </div>
-              <span className="text-green-400 drop-shadow-[0_0_5px_rgba(74,222,128,0.4)] font-semibold">EMAIL</span>
+              <span className="text-green-400 drop-shadow-[0_0_5px_rgba(74,222,128,0.4)] font-bold">EMAIL</span>
             </a>
+            
+            <span className="hidden md:block w-px h-6 bg-white/20"></span>
+            
+            <p className="text-sm md:text-base text-white/60 font-light tracking-wide max-w-md">
+              {t('hero.contact_text')}
+            </p>
 
             {INSTAGRAM_ENABLED && (
               <a 
