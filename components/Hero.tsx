@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/10" />
 
         {/* Watermark Icon */}
-        <div className="absolute bottom-[-1%] right-[-150%] md:right-[28%] w-[400px] h-[400px] md:w-[500px] md:h-[500px] opacity-[0.06] pointer-events-none mix-blend-screen rotate-[5deg]">
+        <div className="absolute bottom-[-1%] right-[-150%] md:right-[31%] w-[400px] h-[400px] md:w-[500px] md:h-[500px] opacity-[0.06] pointer-events-none mix-blend-screen rotate-[5deg]">
           <Image
             src="/hero/MK logo3.png"
             alt=""
