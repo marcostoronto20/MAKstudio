@@ -89,11 +89,11 @@ export default function Hero() {
               <span className="text-green-400 drop-shadow-[0_0_5px_rgba(74,222,128,0.4)] font-bold">EMAIL</span>
             </a>
             
-            <span className="hidden md:block w-px h-6 bg-white/20"></span>
+            <span className="hidden md:block w-px h-6 bg-white/18"></span>
             
-            <p className="text-sm md:text-base text-white/60 font-light tracking-wide max-w-md">
-              {t('hero.contact_text')}
-            </p>
+            <p className="text-xs md:text-sm text-white/40 font-light tracking-wide whitespace-nowrap">
+  {t('hero.contact_text')}
+</p>
 
             {INSTAGRAM_ENABLED && (
               <a 
