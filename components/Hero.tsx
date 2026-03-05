@@ -17,13 +17,13 @@ export default function Hero() {
       {/* Full Screen Background Image */}
       <div className="absolute inset-0 z-0 bg-black">
         <Image
-          src="/hero/mak-studio-hero-v2.png"
-          alt="MAK Studio Background"
-          fill
-          className="object-cover opacity-90"
-          priority
-          quality={100}
-        />
+  src="/hero/mak-studio-hero-v2.png"
+  alt="MAK Studio Background"
+  fill
+  className="object-cover object-[70%_center] md:object-center opacity-90"
+  priority
+  quality={100}
+/>
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/10" />
 
