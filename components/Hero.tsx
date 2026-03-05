@@ -68,12 +68,12 @@ export default function Hero() {
             </div>
           </motion.h2>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col md:flex-row gap-4 md:items-center"
-          >
+          <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="flex flex-row items-center gap-3"
+>
             <a 
               href="mailto:studiomak26@gmail.com" 
               className="group flex items-center gap-3 text-base md:text-lg font-medium tracking-wide uppercase transition-colors"
