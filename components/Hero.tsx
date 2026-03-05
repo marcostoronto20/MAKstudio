@@ -20,7 +20,7 @@ export default function Hero() {
   src="/hero/mak-studio-hero-v2.png"
   alt="MAK Studio Background"
   fill
-  className="object-cover object-[75%_center] md:object-center opacity-90 scale-110 md:scale-100"
+  className="object-cover object-[63%_center] md:object-center opacity-55 scale-105 md:scale-100"
   priority
   quality={100}
 />
