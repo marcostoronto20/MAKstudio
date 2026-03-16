@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 bg-black">
         {/* Desktop background */}
         <Image
-          src="/hero/makbgfinal.png"
+          src="/hero/makbgfinal2.png"
           alt="MAK Studio Background"
           fill
           priority
