@@ -159,11 +159,11 @@ export default function Hero() {
   </p>
 </motion.div>
 
-{/* Glow Patch to hide background star */}
-<div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-24 h-24 md:w-32 md:h-32 rounded-full bg-black/40 blur-xl pointer-events-none z-10" />
-
-<div className="absolute bottom-3 right-3 md:bottom-5 md:right-5 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-cyan-400/20 via-teal-300/10 to-transparent blur-2xl pointer-events-none z-10" />
-
-</section>
+{/* Hard patch to hide bottom-right star from background */}
+      <div className="hidden md:block absolute bottom-0 right-0 w-[260px] h-[260px] z-10 pointer-events-none">
+        <div className="absolute inset-0 rounded-full bg-black blur-[40px]" />
+        <div className="absolute bottom-0 right-0 w-[220px] h-[220px] bg-gradient-to-tl from-black via-black to-transparent" />
+      </div>
+    </section>
   );
 }
