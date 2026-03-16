@@ -17,13 +17,12 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 bg-black">
         {/* Desktop background */}
         <Image
-          src="/hero/makbgfinal2.png"
-          alt="MAK Studio Background"
-          fill
-          priority
-          quality={100}
-          className="hidden md:block object-cover object-center opacity-55 scale-100"
-        />
+  src="/hero/makbgfinal2.png"
+  fill
+  priority
+  quality={100}
+  className="hidden md:block object-cover object-center opacity-55"
+/>
 
         {/* Mobile background */}
         <Image
