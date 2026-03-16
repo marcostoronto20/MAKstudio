@@ -27,7 +27,7 @@ export default function Hero() {
 
         {/* Mobile background */}
         <Image
-  src="/hero/makbgfinal-mobile.png"
+  src="/hero/va-comprar-mockup.png"
   alt="MAK Studio Background Mobile"
   fill
   priority
