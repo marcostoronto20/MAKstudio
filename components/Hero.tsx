@@ -42,7 +42,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/35 md:hidden" />
 
         {/* Watermark Icon */}
-        <div className="hidden md:block absolute bottom-[-1%] right-[1%] w-[250px] h-[250px] opacity-[0.06]">
+        <div className="hidden md:block absolute bottom-[-1%] right-[1%] w-[150px] h-[150px] opacity-[0.06]">
           <Image
             src="/hero/MK logo3.png"
             alt=""
