@@ -159,11 +159,16 @@ export default function Hero() {
   </p>
 </motion.div>
 
-{/* Hard patch to hide bottom-right star from background */}
-      <div className="hidden md:block absolute bottom-0 right-0 w-[260px] h-[260px] z-10 pointer-events-none">
-        <div className="absolute inset-0 rounded-full bg-black blur-[40px]" />
-        <div className="absolute bottom-0 right-0 w-[220px] h-[220px] bg-gradient-to-tl from-black via-black to-transparent" />
-      </div>
+{/* Soft radial fade to hide background star */}
+<div className="pointer-events-none absolute bottom-[-40px] right-[-40px] w-[320px] h-[320px] z-10">
+  <div
+    className="w-full h-full rounded-full blur-[50px]"
+    style={{
+      background:
+        "radial-gradient(circle at center, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,0.15) 70%, transparent 85%)",
+    }}
+  />
+</div>
     </section>
   );
 }
