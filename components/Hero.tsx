@@ -160,12 +160,12 @@ export default function Hero() {
 </motion.div>
 
 {/* Soft radial fade to hide background star */}
-<div className="pointer-events-none absolute bottom-[-40px] right-[-40px] w-[400px] h-[400px] z-10">
+<div className="pointer-events-none absolute bottom-[0px] right-[-40px] w-[600px] h-[600px] z-10">
   <div
     className="w-full h-full rounded-full blur-[80px]"
     style={{
       background:
-        "radial-gradient(circle at center, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,0.15) 70%, transparent 85%)",
+        "radial-gradient(circle at center, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.75) 30%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.15) 65%, transparent 80%)",
     }}
   />
 </div>
