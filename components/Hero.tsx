@@ -142,7 +142,7 @@ export default function Hero() {
   className="
     absolute z-20
     bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-[340px] text-center
-    md:bottom-12 md:left-auto md:right-12 md:translate-x-0 md:w-auto md:max-w-xl md:text-right
+    md:top-32 md:left-auto md:right-16 md:bottom-auto md:translate-x-0 md:w-auto md:max-w-xl md:text-right
     flex flex-col gap-1 md:gap-2
   "
 >
