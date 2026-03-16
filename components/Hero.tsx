@@ -135,17 +135,17 @@ export default function Hero() {
       </div>
 
       {/* Footer Text */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className="
-          absolute z-20
-          bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-[340px] text-center
-          md:bottom-12 md:left-auto md:right-12 md:translate-x-0 md:w-auto md:max-w-xl md:text-right
-          flex flex-col gap-1 md:gap-2
-        "
-      >
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+  className="
+    absolute z-20
+    bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-[340px] text-center
+    md:bottom-12 md:left-auto md:right-12 md:translate-x-0 md:w-auto md:max-w-xl md:text-right
+    flex flex-col gap-1 md:gap-2
+  "
+>
         <p className="font-display text-[1.95rem] sm:text-[2.2rem] md:text-4xl font-bold text-white leading-[0.95] tracking-tight">
           {t('hero.footer.line1')}
         </p>
