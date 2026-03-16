@@ -27,13 +27,13 @@ export default function Hero() {
 
         {/* Mobile background */}
         <Image
-          src="/hero/va-comprar-mockup.png"
-          alt="MAK Studio Background Mobile"
-          fill
-          priority
-          quality={100}
-          className="block md:hidden object-cover object-center opacity-55"
-        />
+  src="/hero/makbgfinal-mobile.png"
+  alt="MAK Studio Background Mobile"
+  fill
+  priority
+  quality={100}
+  className="block md:hidden object-cover object-[58%_62%] opacity-55 scale-[0.92]"
+/>
 
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/20 md:bg-black/10" />
