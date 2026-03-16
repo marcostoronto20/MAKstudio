@@ -9,20 +9,30 @@ import LanguageSelector from '@/components/LanguageSelector';
 
 export default function Hero() {
   const INSTAGRAM_ENABLED = false;
-  const { t, language } = useLanguage();
-  const isEnglish = language === 'en-US';
+  const { t } = useLanguage();
 
   return (
     <section className="relative min-h-[100svh] md:h-screen flex flex-col justify-start pt-24 md:pt-32 px-4 md:px-6 overflow-hidden">
       {/* Full Screen Background Image */}
       <div className="absolute inset-0 z-0 bg-black">
+        {/* Desktop background */}
         <Image
           src="/hero/makbgfinal.png"
           alt="MAK Studio Background"
           fill
           priority
           quality={100}
-          className="object-cover object-[66%_center] md:object-center opacity-55 scale-[1.06] md:scale-100"
+          className="hidden md:block object-cover object-center opacity-55 scale-100"
+        />
+
+        {/* Mobile background */}
+        <Image
+          src="/hero/va-comprar-mockup.png"
+          alt="MAK Studio Background Mobile"
+          fill
+          priority
+          quality={100}
+          className="block md:hidden object-cover object-center opacity-55"
         />
 
         {/* Overlay for better text readability */}
