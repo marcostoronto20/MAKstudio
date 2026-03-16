@@ -158,17 +158,6 @@ export default function Hero() {
     {t('hero.footer.line3')}
   </p>
 </motion.div>
-
-{/* Soft radial fade to hide background star */}
-<div className="pointer-events-none absolute bottom-[0px] right-[-40px] w-[600px] h-[600px] z-10">
-  <div
-    className="w-full h-full rounded-full blur-[20px]"
-    style={{
-      background:
-        "radial-gradient(circle at center, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.75) 20%, rgba(0,0,0,0.4) 35%, rgba(0,0,0,0.15) 45%, transparent 60%)",
-    }}
-  />
-</div>
     </section>
   );
 }
