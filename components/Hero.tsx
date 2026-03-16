@@ -12,17 +12,18 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative w-full min-h-[100svh] md:h-screen flex flex-col justify-start pt-24 md:pt-32 px-4 md:px-6 overflow-hidden">
+    <section className="relative min-h-[100svh] md:h-screen flex flex-col justify-start pt-24 md:pt-32 px-4 md:px-6 overflow-hidden">
       {/* Full Screen Background Image */}
       <div className="absolute inset-0 z-0 bg-black">
         {/* Desktop background */}
         <Image
-  src="/hero/makbgfinal2.png"
-  fill
-  priority
-  quality={100}
-  className="hidden md:block object-cover object-center opacity-55"
-/>
+          src="/hero/makbgfinal2.png"
+          alt="MAK Studio Background"
+          fill
+          priority
+          quality={100}
+          className="hidden md:block object-cover object-center opacity-55 scale-100"
+        />
 
         {/* Mobile background */}
         <Image
@@ -133,30 +134,30 @@ export default function Hero() {
         </div>
       </div>
 
-     {/* Footer Text */}
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-  className="
-    absolute z-20
-    bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-[340px] text-center
-    md:top-32 md:left-auto md:right-16 md:bottom-auto md:translate-x-0 md:w-auto md:max-w-xl md:text-right
-    flex flex-col gap-1 md:gap-2
-  "
->
-  <p className="font-display text-[1.95rem] sm:text-[2.2rem] md:text-4xl font-bold text-white leading-[0.95] tracking-tight">
-    {t('hero.footer.line1')}
-  </p>
+      {/* Footer Text */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        className="
+          absolute z-20
+          bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-[340px] text-center
+          md:bottom-12 md:left-auto md:right-12 md:translate-x-0 md:w-auto md:max-w-xl md:text-right
+          flex flex-col gap-1 md:gap-2
+        "
+      >
+        <p className="font-display text-[1.95rem] sm:text-[2.2rem] md:text-4xl font-bold text-white leading-[0.95] tracking-tight">
+          {t('hero.footer.line1')}
+        </p>
 
-  <p className="font-mono text-[10px] sm:text-[11px] md:text-sm text-cyan-500/80 tracking-[0.18em] md:tracking-[0.2em] uppercase">
-    {t('hero.footer.line2')}
-  </p>
+        <p className="font-mono text-[10px] sm:text-[11px] md:text-sm text-cyan-500/80 tracking-[0.18em] md:tracking-[0.2em] uppercase">
+          {t('hero.footer.line2')}
+        </p>
 
-  <p className="font-sans text-base sm:text-lg md:text-xl text-gray-400 font-light tracking-wide leading-snug">
-    {t('hero.footer.line3')}
-  </p>
-</motion.div>
+        <p className="font-sans text-base sm:text-lg md:text-xl text-gray-400 font-light tracking-wide leading-snug">
+          {t('hero.footer.line3')}
+        </p>
+      </motion.div>
     </section>
   );
 }
