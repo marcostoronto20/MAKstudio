@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Full Screen Background Image */}
       <div className="absolute inset-0 z-0 bg-black">
         <Image
-  src="/hero/mak-studio-hero-v2.png"
+  src="/hero/makbgfinal.png"
   alt="MAK Studio Background"
   fill
   className="object-cover object-[63%_center] md:object-center opacity-55 scale-90 md:scale-100"
