@@ -146,6 +146,12 @@ export default function Hero() {
     flex flex-col gap-1 md:gap-2
   "
 >
+
+  {/* Glow Patch to hide background star */}
+<div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 w-24 h-24 md:w-32 md:h-32 rounded-full bg-black/40 blur-xl pointer-events-none z-10" />
+
+<div className="absolute bottom-3 right-3 md:bottom-5 md:right-5 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-cyan-400/20 via-teal-300/10 to-transparent blur-2xl pointer-events-none z-10" />
+  
         <p className="font-display text-[1.95rem] sm:text-[2.2rem] md:text-4xl font-bold text-white leading-[0.95] tracking-tight">
           {t('hero.footer.line1')}
         </p>
