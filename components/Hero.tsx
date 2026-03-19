@@ -8,7 +8,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 
 export default function Hero() {
-  const INSTAGRAM_ENABLED = false;
+  const INSTAGRAM_ENABLED = true;
   const { t } = useLanguage();
 
   return (
@@ -121,7 +121,7 @@ export default function Hero() {
 
             {INSTAGRAM_ENABLED && (
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/makstudioapps"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 text-sm font-medium tracking-wide uppercase text-white/70 hover:text-cyan-400 transition-colors"
